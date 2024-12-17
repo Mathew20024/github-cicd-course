@@ -13,9 +13,7 @@ jobs:
           with:
             python-version: '3.11'
         - name: Install dependencies
-          with:
-            cache: 'pip'
-        - run: |
+          run: |
             pip install -r ./task_a/requirements.txt
          # TODO: run pytest
         - name: Test
